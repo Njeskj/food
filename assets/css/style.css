@@ -1,0 +1,120 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de navegação */
+
+nav {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #FFF;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/* Rodapé */
+
+.footer p {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos específicos para outras partes do site podem ser adicionados aqui */
+
+/* Por exemplo, estilos para a página restaurantes.php */
+
+/* .restaurant-info {
+    border: 1px solid #DDD;
+    padding: 20px;
+    margin-bottom: 20px;
+} */
+
+
+
+
+
+
+
+
+
+/* Estilos para tornar o layout responsivo */
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
